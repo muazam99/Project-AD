@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Food } from './Food.model';
+import { Food } from './Food.model'
 
 
 @Component({
@@ -9,7 +9,7 @@ import { Food } from './Food.model';
 })
 export class FoodDetailPage implements OnInit {
 
-  food: any[] = [];
+  food: Food[] = [];
   constructor() { }
 
   ngOnInit() {

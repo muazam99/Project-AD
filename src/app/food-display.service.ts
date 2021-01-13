@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Food } from './models/Food.model';
+import { Food } from './pages/food-detail/Food.model';
 
 @Injectable({
   providedIn: 'root'
@@ -20,7 +20,7 @@ export class FoodDisplayService {
 ];
 
 
-  }
+  
 
   constructor() { }
 
@@ -28,4 +28,9 @@ export class FoodDisplayService {
   getAllFood(){
     return [...this.foods];
   }
+
+  
+
+
+
 }
