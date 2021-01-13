@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
+import { Food } from './models/Food.model';
 
 @Injectable({
   providedIn: 'root'
 })
 export class FoodDisplayService {
 
-  private food : Food[] =[
+  private foods: Food[] =[
     {
       name:'Kek Lapis Sarawak',
       price:'RM7.00',
@@ -25,6 +26,6 @@ export class FoodDisplayService {
 
 
   getAllFood(){
-    return [...this.food];
+    return [...this.foods];
   }
 }

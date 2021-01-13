@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Food } from './Food.model';
+
 
 @Component({
   selector: 'app-food-detail',
@@ -7,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FoodDetailPage implements OnInit {
 
+  food: any[] = [];
   constructor() { }
 
   ngOnInit() {
